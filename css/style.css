@@ -49,7 +49,6 @@ body {
   display: flex;
   list-style: none;
   padding: 0;
-  /* border: 1px solid #f30501; */
   justify-content: space-around;
 }
 .navbar ul li a {
@@ -63,15 +62,14 @@ body {
 }
 /* Main Section */
 .introduction {
-  /* height: 250px; */
   background: url("../images/ijsje.jpg") no-repeat center center/cover;
   color: #fff;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 .introduction h1 {
-  font-size: 3rem;
-  padding: 5% 5% 5% 5%;
+  font-size: 4rem;
+  padding: 5% 5% 5% 15%;
   flex: 2;
 }
 /* Main Section: Products */
@@ -106,7 +104,7 @@ body {
 }
 .history-information h2 {
   text-transform: uppercase;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
 }
 .history-image {
   max-width: 50%;
@@ -136,18 +134,17 @@ body {
   display: flex;
   flex-direction: column;
   background: #fd0;
-  /* height: 350px; */
 }
 .heading-description {
   text-align: center;
   color: #f30501;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   text-transform: uppercase;
 }
 .heading-description-images {
   color: #fff;
   text-transform: uppercase;
-  /* font-size: 1.2rem; */
+  font-size: 1.3rem;
 }
 .description .description-images {
   display: flex;
@@ -159,13 +156,10 @@ body {
 .description-gluten-free {
   position: relative;
   align-self: flex-start;
-  /* background: url("../images/glutenvrij.jpg") no-repeat center center/cover; */
   flex: 0 0 30%;
 }
 .description-for-children {
   position: relative;
-  /* background: url("../images/walls_c52_relatedarticles_girls-1052897-jpg.jpg.ulenscale.320x200.webp")
-    no-repeat center center/cover; */
   flex: 0 1 30%;
 }
 .description .heading-description-images {
@@ -177,7 +171,6 @@ body {
 }
 .description-gluten-free img {
   width: 100%;
-  /* height: auto; */
 }
 .description-for-children h3 {
   bottom: 10%;
@@ -203,7 +196,7 @@ body {
 /* footer */
 .footer {
   background: #f30501;
-
+  border-top: 3px outset #f30501;
   color: #fff;
   font-family: Helvetica, sans-serif;
   font-size: 1rem;
@@ -214,7 +207,6 @@ body {
   display: flex;
   justify-content: space-around;
 }
-
 .footer-container ul {
   list-style: none;
 }
