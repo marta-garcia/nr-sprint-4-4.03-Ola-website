@@ -55,9 +55,9 @@ body {
 .navbar ul li a {
   text-decoration: none;
   color: #f30501;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: lighter;
-  padding: 16px 15px;
+  padding: 18px 5px;
 }
 .navbar li a:hover {
   color: #fff;
@@ -251,7 +251,7 @@ body {
 }
 
 /* Mobile styling */
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 768px) {
   .header {
     justify-content: space-between;
   }
