@@ -13,14 +13,20 @@
     url("//db.onlinewebfonts.com/t/5c8036fec9d614a90b202dbe1c3b8395.svg#Stick-A-RoundW00-Stick-A-Round")
       format("svg");
 }
-* {
+  
+html {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
-body {
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
   font-family: "Stick-A-RoundW00-Stick-A-Round", sans-serif;
 }
+
 /* Header styling including navbar */
 .header {
   font-family: Helvetica, sans-serif;
@@ -34,46 +40,55 @@ body {
   border-bottom: 3px outset #f30501;
   z-index: 2;
 }
+
 .header .menu-icon {
   display: none;
   color: #f30501;
 }
+
 .logo-icon {
   width: 45px;
   padding-bottom: 10px;
 }
+
 .navbar {
   flex-grow: 2;
   padding: 0 70px;
 }
+
 .navbar ul {
   display: flex;
   list-style: none;
   padding: 0;
   justify-content: center;
 }
+
 .navbar ul li a {
   text-decoration: none;
   color: #f30501;
   font-size: 1rem;
-  font-weight: lighter;
+  font-weight: lighter; /** hm... */
   padding: 18px 10px;
 }
+
 .navbar li a:hover {
   color: #fff;
   background: #f30501;
 }
+
 .icon-search {
   color: #f30501;
 }
+
 /* Main Section */
 .introduction {
   background: url("https://asset-eu.unileversolutions.com/content/dam/unilever/heart/netherlands/general_image/walls_nl_header-1382974-jpg.jpg.ulenscale.960x240.jpg")
-    no-repeat center center/cover;
+    no-repeat center center / cover;
   color: #fff;
   display: flex;
   height: 250px;
 }
+
 .introduction h1 {
   font-size: 3rem;
   align-self: center;
@@ -81,25 +96,38 @@ body {
   flex: 1 0 25%;
   width: 100%;
 }
+
 /* Main Section: Products */
 .products {
   display: flex;
   flex-wrap: wrap;
   background: #f30501;
 }
+
 .products .ice {
   display: flex;
   flex: 0 0 25%;
 }
+
 .products img {
   max-width: 100%;
 }
+
+/* 
+.product staat altijd in .products, dus de regel hierboven heeft al hetzelfde effect.
+Je zou ook default kunnen zetten:
+
+img { max-width: 100%; }
+
 .product img {
   max-width: 100%;
-}
+} 
+*/
+
 .history_wrapper {
   background: green;
 }
+
 /* Section: History about Ola */
 .history {
   display: flex;
@@ -111,81 +139,99 @@ body {
   font-size: 1.1rem;
   text-transform: capitalize;
 }
+
 .history-information h2 {
   text-transform: uppercase;
   font-size: 1.9rem;
 }
+
 .history-image {
   max-width: 50%;
 }
+
 .history-information {
   text-align: left;
   padding: 0 0 0 2rem;
 }
+
 .history-information a {
-  font-family: Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif; /* komt meerdere malen voor - mag je ook een custom property van maken */
   text-decoration: none;
   color: #fff;
   font-size: 1.1rem;
 }
+
 .arrow-left {
   padding-left: 10px;
 }
+
 .arrow-left:hover {
   margin-left: -10px;
 }
+
+/* Zou je dit block niet bij .history houden? Nu staan er niet relatief veel zeggende classes boven */
 .history > * {
   flex-basis: 50%;
   flex-shrink: 0;
 }
+
 /* Section  description about Ola's ice creams */
 .description {
   display: flex;
   flex-direction: column;
   background: #fd0;
 }
+
 .heading-description {
   text-align: center;
   color: #f30501;
   font-size: 1.9rem;
   padding: 1% 0;
 }
+
 .heading-description-images {
   color: #fff;
   text-transform: uppercase;
   font-size: 1.5rem;
 }
+
 .description .description-images {
   align-items: center;
   display: flex;
 }
+
 .description-images h2 {
   color: #fff;
 }
+
 .description-gluten-free {
   position: relative;
   align-self: flex-start;
 }
+
 .description-for-children {
   position: relative;
 }
+
 .description .heading-description-images {
   position: absolute;
 }
-.description-gluten-free h3 {
+
+.description-gluten-free h3,
+.description-for-children h3 {
   bottom: 20%;
   right: 45%;
 }
-.description-gluten-free img {
-  width: 100%;
-}
-.description-for-children h3 {
-  bottom: 20%;
-  right: 15%;
-}
+
+.description-gluten-free img,
 .description-for-children img {
   width: 100%;
 }
+
+.description-for-children h3 {
+  right: 15%;
+}
+
 .description a {
   align-self: center;
   color: #f30501;
@@ -194,13 +240,15 @@ body {
   padding: 10px 20px;
   border-radius: 45px;
   margin-top: 1%;
-  margin-bottom: 2%;
+  margin-bottom: 2%; /* ... dangerouss... */
   text-transform: lowercase;
 }
+
 .description a:hover {
   background-color: rgb(255, 234, 100);
   color: #f30501;
 }
+
 /* footer */
 .footer {
   background: #f30501;
@@ -211,36 +259,45 @@ body {
   font-weight: lighter;
   line-height: 1.7rem;
 }
+
 .footer-container {
   display: flex;
   justify-content: space-around;
 }
+
 .footer-container ul {
   list-style: none;
 }
+
 .footer-container ul li {
   padding: 1%;
 }
+
 .footer-container ul li a {
   text-decoration: none;
   color: #fff;
   line-height: 1.2rem;
 }
+
 .social-media-footer {
   padding-right: 3%;
 }
+
 .country-selection {
   display: block;
   padding-bottom: 10%;
 }
+
 .wrapper-footer {
-  display: block;
+  display: block; /* doe je vaak, is het niet default al een block? */
   margin-left: 2%;
   padding-bottom: 2%;
 }
+
 .wrapper-footer p {
   padding-bottom: 2%;
 }
+
 .wrapper-footer .button-cookies {
   background-color: rgb(0, 125, 187);
   border-radius: 5px;
@@ -251,46 +308,67 @@ body {
 }
 
 /* Mobile styling */
-@media screen and (max-width: 830px) {
+/* Mag ook zijn @media (max-width: 830px) { ... } */
+@media screen and (max-width: 830px) { 
   .header {
     justify-content: space-between;
   }
+  
   .header .menu-icon {
     display: block;
   }
+  
   .header .logo-icon {
     margin-bottom: 10px;
   }
+  
   .navbar {
     display: none;
   }
+  
   .products .ice {
     flex: 0 0 50%;
   }
+  
   .history {
     display: block;
   }
+  
   .history-image {
     min-width: 100%;
   }
+  
   .history-information {
     text-align: center;
   }
+  
   .description .description-images {
     padding: 5% 25% 5% 0;
   }
+  
   .description .heading-description-images {
     text-align: center;
   }
+  
   .footer-container {
     flex-direction: column;
   }
+  
   .unilever-logo {
     display: none;
   }
 }
+
 @media screen and (min-width: 1000px) {
   .description .description-images {
     padding-left: 2%;
   }
 }
+
+/* 
+Opmerkingen
+- gebruik custom properties
+- px en rem door elkaar en ook her en der % - mag allemaal maar denk aan consistentie en effect van vooral % gebruik
+- hou je css leesbaar door lege regels na een {} block
+
+*/
