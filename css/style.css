@@ -15,19 +15,16 @@
 }
 * {
   box-sizing: border-box;
-}
-:root {
-  font-family: "Stick-A-RoundW00-Stick-A-Round", sans-serif;
-}
-/* Body Styling */
-body {
   margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Stick-A-RoundW00-Stick-A-Round", sans-serif;
 }
 /* Header styling including navbar */
 .header {
   font-family: Helvetica, sans-serif;
   background: #fff;
-  line-height: 1.6rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -41,25 +38,30 @@ body {
   display: none;
   color: #f30501;
 }
+.logo-icon {
+  width: 45px;
+  padding-bottom: 10px;
+}
 .navbar {
   flex-grow: 2;
-  padding: 0 40px;
+  padding: 0 70px;
 }
 .navbar ul {
   display: flex;
   list-style: none;
   padding: 0;
-  justify-content: space-around;
-}
-.navbar:hover {
-  background: #f30501;
-  color: #fff;
+  justify-content: center;
 }
 .navbar ul li a {
   text-decoration: none;
   color: #f30501;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: lighter;
+  padding: 18px 10px;
+}
+.navbar li a:hover {
+  color: #fff;
+  background: #f30501;
 }
 .icon-search {
   color: #f30501;
@@ -70,11 +72,14 @@ body {
     no-repeat center center/cover;
   color: #fff;
   display: flex;
+  height: 200px;
 }
 .introduction h1 {
-  font-size: 4rem;
-  padding: 5% 5% 5% 15%;
-  flex: 2;
+  font-size: 3rem;
+  align-self: center;
+  padding-left: 25%;
+  flex: 1 0 25%;
+  width: 100%;
 }
 /* Main Section: Products */
 .products {
@@ -143,15 +148,16 @@ body {
   text-align: center;
   color: #f30501;
   font-size: 1.9rem;
+  padding: 1% 0;
 }
 .heading-description-images {
   color: #fff;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .description .description-images {
+  align-items: center;
   display: flex;
-  flex-grow: 1;
 }
 .description-images h2 {
   color: #fff;
@@ -159,24 +165,22 @@ body {
 .description-gluten-free {
   position: relative;
   align-self: flex-start;
-  flex: 0 0 30%;
 }
 .description-for-children {
   position: relative;
-  flex: 0 1 30%;
 }
 .description .heading-description-images {
   position: absolute;
 }
 .description-gluten-free h3 {
-  bottom: 10%;
+  bottom: 20%;
   right: 45%;
 }
 .description-gluten-free img {
   width: 100%;
 }
 .description-for-children h3 {
-  bottom: 10%;
+  bottom: 20%;
   right: 15%;
 }
 .description-for-children img {
@@ -234,7 +238,10 @@ body {
   margin-left: 2%;
   padding-bottom: 2%;
 }
-.wrapper-footer a {
+.wrapper-footer p {
+  padding-bottom: 2%;
+}
+.wrapper-footer .button-cookies {
   background-color: rgb(0, 125, 187);
   border-radius: 5px;
   text-decoration: none;
@@ -244,7 +251,7 @@ body {
 }
 
 /* Mobile styling */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 830px) {
   .header {
     justify-content: space-between;
   }
@@ -269,10 +276,21 @@ body {
   .history-information {
     text-align: center;
   }
+  .description .description-images {
+    padding: 5% 25% 5% 0;
+  }
+  .description .heading-description-images {
+    text-align: center;
+  }
   .footer-container {
     flex-direction: column;
   }
   .unilever-logo {
     display: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .description .description-images {
+    padding-left: 2%;
   }
 }
