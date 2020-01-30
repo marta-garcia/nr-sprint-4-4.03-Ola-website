@@ -112,7 +112,6 @@ html {
 }
 
 .products img {
-  border: solid 2px black;
   max-width: 100%;
   max-height: 100%;
 }
@@ -280,6 +279,11 @@ html {
   padding-bottom: 1.5rem;
 }
 
+.instagram img {
+  width: 30px;
+  height: 30px;
+}
+
 .wrapper-footer {
   margin-left: 1.5rem;
   padding-bottom: 1rem;
@@ -317,7 +321,7 @@ html {
   }
 
   .products .ice {
-    flex: 0 0 50%;
+    flex: 1 0 50%;
   }
 
   .history {
@@ -346,11 +350,6 @@ html {
 
   .unilever-logo {
     display: none;
-  }
-
-  .instagram img {
-    width: 30px;
-    height: 30px;
   }
 
   .logo-footer img {
