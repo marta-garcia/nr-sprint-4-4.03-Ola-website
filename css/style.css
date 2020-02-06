@@ -109,15 +109,12 @@ html {
 .products .ice {
   display: flex;
   flex: 0 0 25%;
+  height: 100%;
 }
 
 .products img {
   max-width: 100%;
   max-height: 100%;
-}
-
-.product img {
-  max-width: 100%;
 }
 
 .history_wrapper {
@@ -327,6 +324,7 @@ html {
 
   .products .ice {
     flex: 0 0 50%;
+    height: 50%;
   }
 
   .history {
