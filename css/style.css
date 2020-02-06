@@ -279,6 +279,11 @@ html {
   padding-bottom: 1.5rem;
 }
 
+.country-selection img {
+  width: 30px;
+  height: 30px;
+}
+
 .instagram img {
   width: 30px;
   height: 30px;
@@ -321,7 +326,7 @@ html {
   }
 
   .products .ice {
-    flex: 1 0 50%;
+    flex: 0 0 50%;
   }
 
   .history {
@@ -337,7 +342,7 @@ html {
   }
 
   .description .description-images {
-    padding: 5% 25% 5% 0;
+    padding: 5% 20% 5% 0;
   }
 
   .description .heading-description-images {
