@@ -112,7 +112,7 @@ html {
 .products .ice {
   display: flex;
   flex: 0 0 25%;
-  max-height: 300px;
+  max-height: 400px;
 }
 
 .products img {
@@ -332,7 +332,7 @@ html {
 
   .products .ice {
     flex: 0 1 50%;
-    max-height: 250px;
+    max-height: 325px;
   }
 
   .history {
