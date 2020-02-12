@@ -308,7 +308,7 @@ html {
 }
 
 /* Mobile styling */
-@media (max-width: 770px) {
+@media (max-width: 770px) and (max-width: 1024px) {
   .header {
     justify-content: space-between;
   }
